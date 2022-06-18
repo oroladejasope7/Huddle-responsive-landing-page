@@ -1,0 +1,379 @@
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.box{
+    background: red;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 100px auto;
+    animation-name: rotate;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+        background-color: blue;
+    }
+
+    to {
+        transform: rotate(360deg);
+        background-color: green;
+    }
+}
+.btn{
+    height: 8vh;
+    width: 10%;
+    background-color: rgb(48, 48, 217);
+    border-radius: 6px;
+    border-color: gray;
+}
+.btn:hover{
+    height: 10vh;
+    width: 15%;
+    background-color: greenyellow;
+    border-radius: 6px;
+    transform: scale(1.0);
+}
+a{
+    color: white;
+}
+a:hover{
+    color: black;
+}
+*{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+.hero{
+    height: 60vh;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(./bg-hero-desktop.svg);
+    background-size: 50%;
+}
+.heroheader{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.herosidebtn{
+    background-color: white;
+    color: black;
+    height: 5vh;
+    width: 10%;
+    border-radius: 30px;
+    border: 2px;
+    cursor: pointer;
+}
+.herobtn{
+    background-color: hsl(322, 100%, 66%);
+    color: rgb(223, 217, 217);
+    height: 5vh;
+    width: 40%;
+    border-radius: 30px;
+    border: 2px;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 3px rgb(220, 219, 219);
+}
+.heromain{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.herofirst{
+    height: 90vh;
+    width: 40%;
+    margin-top: 100px;
+}
+.herop{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.herosecond{
+    height: 90vh;
+    width: 45%;
+}
+.seg1{
+    height: 30vh;
+    width: 90%;
+    margin-top: 70px;
+    margin-left: 5%;
+    background-color: transparent;
+    border-radius: 7px;
+    box-shadow: 1px 1px 15px 0.01px rgb(220, 219, 219);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.innerseg{
+    height: 30vh;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 5%;
+    background-color: transparent;
+    border-radius: 7px;
+    box-shadow: 1px 1px 15px 0.01px rgb(220, 219, 219);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lastseg{
+    height: 30vh;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 5%;
+    margin-bottom: 150px;
+    background-color: transparent;
+    border-radius: 7px;
+    box-shadow: 1px 1px 15px 0.01px rgb(220, 219, 219);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer{
+    height: 40vh;
+    width: 100%;
+    background-color: hsl(192, 100%, 9%);
+}
+.huddleimg{
+    height: 7vh;
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 5.9%;
+}
+.vlseg{
+    height: 20vh;
+    width: 35%;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    top: 40px;
+    left: 32%;
+    box-shadow: 1px 1px 15px 0.01px hsl(192, 100%, 9%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.asideref{
+    margin-left: 160px;
+}
+.movelft{
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.finalseg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.flexd{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+@media (max-width: 375px) {
+    .btn{
+        width: 100px;
+    }
+    .hero{
+        height: 100vh;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: -20px;
+        background-color: hsl(193, 100%, 96%);
+        background-image: url(./bg-hero-mobile.svg);
+        background-size: 50%;
+    }
+    .heromain{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .heroheader{
+        margin-top: 5%;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .herofirst{
+        height: 90vh;
+        width: 100%;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .herobtn{
+        background-color: hsl(322, 100%, 66%);
+        color: rgb(223, 217, 217);
+        height: 5vh;
+        width: 80%;
+        border-radius: 30px;
+        border: 2px;
+        cursor: pointer;
+        box-shadow: 2px 2px 15px 3px rgb(220, 219, 219);
+    }
+    .herosecond{
+        height: 90vh;
+        width: 100%;
+        margin-top: -100px;
+    }
+    .herosidebtn{
+        background-color: white;
+        color: black;
+        height: 5vh;
+        width: 30%;
+        border-radius: 30px;
+        border: 2px;
+        cursor: pointer;
+    }
+    .seg1{
+        height: 50vh;
+        width: 90%;
+        margin-top: 70px;
+        margin-left: 5%;
+        background-color: transparent;
+        border-radius: 15px;
+        box-shadow: 1px 1px 15px 0.01px rgb(220, 219, 219);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .innerseg{
+        height: 50vh;
+        width: 90%;
+        margin-top: 25px;
+        margin-left: 5%;
+        background-color: transparent;
+        border-radius: 15px;
+        box-shadow: 1px 1px 15px 0.01px rgb(220, 219, 219);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .lastseg{
+        height: 50vh;
+        width: 90%;
+        margin-top: 25px;
+        margin-left: 5%;
+        margin-bottom: 150px;
+        background-color: transparent;
+        border-radius: 15px;
+        box-shadow: 1px 1px 15px 0.01px rgb(220, 219, 219);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .innersegment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .opaqpg{
+        opacity: 0.4;
+    }
+    .segimg{
+        transform: scaleX(2.8);
+    }
+    .vlseg{
+        height: 20vh;
+        width: 90%;
+        background-color: white;
+        border-radius: 15px;
+        position: relative;
+        top: 40px;
+        left: 5%;
+        box-shadow: 1px 1px 15px 0.01px hsl(192, 100%, 9%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .asideref{
+        margin-left: 20px;
+    }
+    .footer{
+        height: 58vh;
+        width: 100%;
+        background-color: hsl(192, 100%, 9%);
+    }
+    .huddleimg{
+        height: 7vh;
+        width: 50%;
+        margin-top: 50px;
+        margin-left: 5.9%;
+    }
+    .vlseg{
+        height: 15vh;
+        width: 67%;
+        background-color: white;
+        border-radius: 8px;
+        position: relative;
+        top: 40px;
+        left: 12%;
+        box-shadow: 1px 1px 15px 0.01px hsl(192, 100%, 9%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .asideref{
+        margin-left: 80px;
+    }
+    .movelft{
+        margin-left: 54px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .finalseg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+    }
+    .flexd{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2%;
+    }
+    .footerli{
+        margin-left: 15%;
+    }
+}
